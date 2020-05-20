@@ -1,16 +1,19 @@
-def addition(num1, *nums): 
-    for num in nums: 
-        answer = num1 + *nums
-    return answer
+def addition(num, *nums):
+  for n in nums:
+    num += n
+  return num
 
-def subtract(num1, num2):
-  answer = num1 - num2
-  return answer
+def subtract(num, *nums):
+  for n in nums:
+    num -= n
+  return num
 
-def multiply(num1, num2):
-  answer = num1 * num2
-  return answer
+def multiply(num, *nums):
+  for n in nums:
+    num *= n
+  return num
 
-def divide(num1, num2):
-  answer = num1 / num2
-  return answer
+def divide(num, *nums):
+  for n in nums:
+    num /= n
+  return num
