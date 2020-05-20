@@ -1,5 +1,5 @@
-from math-funcs import addition, subtract, divide, multiply
-from previous-answer import *
+from mathFuncs import addition, subtract, divide, multiply
+from previousAnswer import *
 oMenu = True
 while oMenu:
   print("Welcome to the python calculator program.")
