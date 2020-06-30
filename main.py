@@ -1,5 +1,4 @@
 from mathFuncs import addition, subtract, multiply, divide
-from previousAnswer import *
 run = True
 while run:
   print("Welcome to the python calculator program.")
