@@ -1,3 +1,6 @@
-# python subroutines calculator
+# Python Calculator
 
-### Try it out: https://repl.it/repls/FrizzyStormyTransversals
+### Run it: https://repl.it/repls/FrizzyStormyTransversals
+
+Work in progress.
+<sub>Made by (samm4x)[https://samm4x.xyz]</sub>
