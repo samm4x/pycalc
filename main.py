@@ -59,7 +59,5 @@ while run:
     run = False
   else:
     print("Invalid option.") 
-print("---------------------------------")
 print("---------- PROGRAM END ----------")
-print("---------------------------------")
 exit()
