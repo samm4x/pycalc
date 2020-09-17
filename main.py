@@ -48,10 +48,13 @@ while run:
     answer = divide(*numbers)
   else:
     print("Invalid option.")
-  print("----------------------------")
-  print("Your answer is:")
-  print(answer)
-  print("----------------------------")
+  try:
+    print("----------------------------")
+    print("Your answer is:")
+    print(answer)
+    print("----------------------------")
+  except:
+    print("There was an error solving that calculation. Possibly a divide by zero error?")
   runAgain = input("Do you want to solve another calculation? (y/n) ").lower()
   if runAgain == "y":
     run = True
