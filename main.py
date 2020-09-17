@@ -45,7 +45,10 @@ while run:
         moreNumbers = True
       if yn == "n":
         moreNumbers = False
-    answer = divide(*numbers)
+    try:    
+      answer = divide(*numbers)
+    except ZeroDivisionError:
+      answer = 0
   else:
     print("Invalid option.")
   try:
@@ -54,7 +57,7 @@ while run:
     print(answer)
     print("----------------------------")
   except:
-    print("There was an error solving that calculation. Possibly a divide by zero error?")
+    print("There was an error solving that calculation. Possibly an error?")
   runAgain = input("Do you want to solve another calculation? (y/n) ").lower()
   if runAgain == "y":
     run = True
