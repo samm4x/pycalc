@@ -48,6 +48,7 @@ while run:
     try:    
       answer = divide(*numbers)
     except ZeroDivisionError:
+      # This stops the user from recieving a "ZeroDivisionError" when dividng by zero.
       answer = 0
   else:
     print("Invalid option.")
