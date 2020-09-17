@@ -45,13 +45,20 @@ while run:
         moreNumbers = True
       if yn == "n":
         moreNumbers = False
-    answer = divide(*numbers)
+    try:    
+      answer = divide(*numbers)
+    except ZeroDivisionError:
+      # This stops the user from recieving a "ZeroDivisionError" when dividng by zero.
+      answer = 0
   else:
     print("Invalid option.")
-  print("----------------------------")
-  print("Your answer is:")
-  print(answer)
-  print("----------------------------")
+  try:
+    print("----------------------------")
+    print("Your answer is:")
+    print(answer)
+    print("----------------------------")
+  except:
+    print("There was an error solving that calculation. Possibly an error?")
   runAgain = input("Do you want to solve another calculation? (y/n) ").lower()
   if runAgain == "y":
     run = True
